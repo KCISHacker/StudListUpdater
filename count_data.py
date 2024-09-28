@@ -9,8 +9,8 @@ for i in range(file_count):
         data.extend(json.load(f))
 
 
-# Get current time and convert to yyyyMMdd format
-current_date = time.strftime("%Y%m%d")
+# Get current time and convert to yyyy-MM-dd format
+current_date = time.strftime("%Y-%m-%d")
 
 result = {}
 grade = {}
