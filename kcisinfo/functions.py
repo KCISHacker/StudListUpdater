@@ -143,7 +143,6 @@ def get_time_string(time):
 
 
 def get_card(query_id):
-    return
     id_api_login = {
         "__VIEWSTATE": "x1ykVo8PcxjJMD7IpydQTOx8DSN21FiuS2vASjpXoLpz/+NQ5ZEx+QIevk4txXWaRMIrMAno4Wax4XakQyZrMJ1XXZwJZE7aa6CJeT7jmRM=",
         "__VIEWSTATEGENERATOR": "D303DDCD",

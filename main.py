@@ -68,12 +68,6 @@ def generate_name_only(min_grade, max_grade, min_range, max_range) -> dict:
 def update(
     min_grade, max_grade, min_range, max_range, guess_min_year, guess_max_year, old_data
 ) -> list:
-    formed_list = {}
-    # form list into key value pair in able to find old data quick
-    for i in old_data:
-        formed_list.update({str(i["id"]): i})
-    old_data = formed_list
-
     result_list = []
     for i in range(int(min_grade), int(max_grade) + 1):
         for j in range(int(min_range), int(max_range) + 1):
@@ -164,6 +158,10 @@ def main(mode: str):
 
             result_list = []
 
+            formed_list = {}
+            # form list into key value pair in able to find old data quick
+            for i in old:
+                formed_list.update({str(i["id"]): i})
             result_list = update(
                 query_grade_min,
                 query_grade_max,
